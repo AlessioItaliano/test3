@@ -15,8 +15,8 @@ import { ReactComponent as NextArrow } from '../../icons/arrow-right.svg';
 
 // import { selectUser } from 'redux/auth/selectors';
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export const ReviewsSlider = () => {
   const swiper = useSwiper();
