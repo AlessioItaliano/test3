@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSwiper } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import { AiFillStar } from 'react-icons/ai';
 import * as s from './ReviewsSlider.styled';
@@ -22,7 +22,6 @@ export const ReviewsSlider = () => {
   const swiper = useSwiper();
   const reviews = useSelector(state => state.reviews.items);
   const dispatch = useDispatch();
-  const [slidesPerView, setSlidesPerView] = useState(2);
 
   //   const user = useSelector(selectUser);
   // const firstLeter = user.name.slice(0, 1);
@@ -31,23 +30,6 @@ export const ReviewsSlider = () => {
   useEffect(() => {
     dispatch(getAllReviews());
   }, [dispatch]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setSlidesPerView(1);
-      } else {
-        setSlidesPerView(2);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const starsConfig = {
     size: 14,
@@ -76,26 +58,20 @@ export const ReviewsSlider = () => {
   return (
     // const avatar = user.url;
 
-    <s.SectionMod>
+    <section>
       <s.ContainerModify>
         <s.Title>Reviews</s.Title>
         <s.StyledSwiper
-          autoplay={{
-            delay: 6000,
-            disableOnInteraction: false,
-          }}
           rewind={true}
-          slidesPerView={slidesPerView}
-          spaceBetween={24}
           navigation={{
             prevEl: '.prev',
             nextEl: '.next',
           }}
-          modules={[Autoplay, Navigation]}
+          modules={[Navigation]}
         >
           <s.ReviewContainer>
             {reviews.map(review => (
-              <s.SwiperSlides key={review._id}>
+              <s.SwiperSlides key={review.owner}>
                 <s.UserContainer>
                   <s.UserInfo>
                     {/* <s.UserAvatar> */}
@@ -130,6 +106,6 @@ export const ReviewsSlider = () => {
           </div>
         </s.StyledSwiper>
       </s.ContainerModify>
-    </s.SectionMod>
+    </section>
   );
 };
