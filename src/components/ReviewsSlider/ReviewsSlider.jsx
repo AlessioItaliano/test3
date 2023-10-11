@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSwiper } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { AiFillStar } from 'react-icons/ai';
 import * as s from './ReviewsSlider.styled';
@@ -15,8 +16,8 @@ import { ReactComponent as NextArrow } from '../../icons/arrow-right.svg';
 
 // import { selectUser } from 'redux/auth/selectors';
 
-import '../../../node_modules/swiper/css';
-import '../../../node_modules/swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export const ReviewsSlider = () => {
   const swiper = useSwiper();
@@ -61,7 +62,7 @@ export const ReviewsSlider = () => {
     <section>
       <s.ContainerModify>
         <s.Title>Reviews</s.Title>
-        <s.StyledSwiper
+        <Swiper
           rewind={true}
           navigation={{
             prevEl: '.prev',
@@ -104,7 +105,7 @@ export const ReviewsSlider = () => {
               <NextArrow />
             </s.ArrowButton>
           </div>
-        </s.StyledSwiper>
+        </Swiper>
       </s.ContainerModify>
     </section>
   );
