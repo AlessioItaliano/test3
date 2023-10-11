@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/test3/static/css/main.ccb16517.css",
-    "main.js": "/test3/static/js/main.4e90e69e.js",
+    "main.js": "/test3/static/js/main.bc6047da.js",
     "static/css/369.9f16186c.chunk.css": "/test3/static/css/369.9f16186c.chunk.css",
-    "static/js/369.3d0f62ef.chunk.js": "/test3/static/js/369.3d0f62ef.chunk.js",
-    "static/js/25.c6e119a1.chunk.js": "/test3/static/js/25.c6e119a1.chunk.js",
+    "static/js/369.b08232fd.chunk.js": "/test3/static/js/369.b08232fd.chunk.js",
+    "static/js/292.d2e094e1.chunk.js": "/test3/static/js/292.d2e094e1.chunk.js",
     "static/js/530.b4f7bb6b.chunk.js": "/test3/static/js/530.b4f7bb6b.chunk.js",
     "static/js/936.90f6435c.chunk.js": "/test3/static/js/936.90f6435c.chunk.js",
     "static/js/227.d46f7148.chunk.js": "/test3/static/js/227.d46f7148.chunk.js",
@@ -91,10 +91,10 @@
     "static/media/chevron-right.svg": "/test3/static/media/chevron-right.43bcd6bc09720b92868e7db39d88a61b.svg",
     "static/media/arrow-left.svg": "/test3/static/media/arrow-left.e496ec349e03662ffe519165a6e01f01.svg",
     "main.ccb16517.css.map": "/test3/static/css/main.ccb16517.css.map",
-    "main.4e90e69e.js.map": "/test3/static/js/main.4e90e69e.js.map",
+    "main.bc6047da.js.map": "/test3/static/js/main.bc6047da.js.map",
     "369.9f16186c.chunk.css.map": "/test3/static/css/369.9f16186c.chunk.css.map",
-    "369.3d0f62ef.chunk.js.map": "/test3/static/js/369.3d0f62ef.chunk.js.map",
-    "25.c6e119a1.chunk.js.map": "/test3/static/js/25.c6e119a1.chunk.js.map",
+    "369.b08232fd.chunk.js.map": "/test3/static/js/369.b08232fd.chunk.js.map",
+    "292.d2e094e1.chunk.js.map": "/test3/static/js/292.d2e094e1.chunk.js.map",
     "530.b4f7bb6b.chunk.js.map": "/test3/static/js/530.b4f7bb6b.chunk.js.map",
     "936.90f6435c.chunk.js.map": "/test3/static/js/936.90f6435c.chunk.js.map",
     "227.d46f7148.chunk.js.map": "/test3/static/js/227.d46f7148.chunk.js.map",
@@ -110,6 +110,6 @@
   },
   "entrypoints": [
     "static/css/main.ccb16517.css",
-    "static/js/main.4e90e69e.js"
+    "static/js/main.bc6047da.js"
   ]
 }
