@@ -62,6 +62,7 @@ export const ReviewsSlider = () => {
     <section>
       <s.ContainerModify>
         <s.Title>Reviews</s.Title>
+        <div></div>
         <Swiper
           rewind={true}
           navigation={{
