@@ -72,7 +72,7 @@ export const ReviewsSlider = () => {
         >
           <s.ReviewContainer>
             {reviews.map(review => (
-              <s.SwiperSlides key={review.owner}>
+              <SwiperSlide key={review.owner}>
                 <s.UserContainer>
                   <s.UserInfo>
                     {/* <s.UserAvatar> */}
@@ -93,7 +93,7 @@ export const ReviewsSlider = () => {
                   </s.UserInfo>
                   <s.UserReview>{review.comment}</s.UserReview>
                 </s.UserContainer>
-              </s.SwiperSlides>
+              </SwiperSlide>
             ))}
           </s.ReviewContainer>
 
